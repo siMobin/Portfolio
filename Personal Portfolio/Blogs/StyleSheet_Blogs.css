@@ -1,0 +1,316 @@
+@import url('https://fonts.googleapis.com/css2?family=Tapestry&display=swap');
+
+
+
+
+
+body{
+    margin-left: 2%;
+   margin-right: 2%;
+   margin-bottom: 30px; 
+}
+
+.header-section{
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.800), rgba(255, 255, 255, 0)), url("../Image/T.4.jpg");
+    background-size: 100%;
+    background-position: center;
+    margin-top: 0;
+    background-repeat: no-repeat;
+    padding-left: 0%;
+    border-radius: 10px 10px 0px 0px;
+    background-size: cover;   
+    min-height: 400px;
+    padding-bottom: 0px;
+}
+
+.nav{
+    background-color:rgba(120, 164, 188, 0.400) ;
+    font-weight: bold;
+    font-size: 1.1em;
+    padding: 0%;
+    margin: 0%;
+    text-align: right;
+    border-radius: 10px 10px 0px 0px;
+    
+}
+
+.nav a{
+    text-decoration: none;
+    margin-top: 3px;
+    margin-bottom: 3px;
+    font-size: smaller;
+    display: inline-block;
+    margin-left: 1%;
+    margin-right: 2%;
+    font-family: Open Sans;
+    color: aliceblue;
+    text-align: center;
+}
+
+.nav a:hover{
+    color: rgba(0, 234, 255, 0.674);   
+}
+
+.home{
+    background-color: rgb(4, 182, 206);
+    text-align: center;
+    padding: 4px;
+    border-radius: 3px;
+}
+
+.nav input[type=text] {
+    border-radius: 5px;
+    float: right;
+    padding: 2px;
+    margin: .2em 2em .2em 0em ;
+    background-color: rgba(240, 248, 255, 0.300);
+    border: 1px solid rgba(0, 234, 255, 0.674);
+}
+
+.header .blog-title{
+    
+    font-family: 'cursive' ;
+    margin: 0;
+    color: rgba(0, 234, 255, 0.674);
+    padding-left: 2%;
+}
+.header h1{
+    font-size: 700%;
+    margin: 0;
+}
+.header h2{
+    font-size: 600%;
+    margin: 0;
+}
+.header h3{
+    font-size: 500%;
+    margin: 0;
+}
+.header h4{
+    font-size: 400%;
+    margin: 0;
+    padding-bottom: .2em;
+}
+
+.featurs{
+    color: rgb(128,128,128);
+    padding: .5em 0 .5em 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.featurs figure{   
+    margin: auto;
+    width: 50%;
+    text-align: center;
+    padding: 1%;
+}
+
+.featurs figure img{
+    border-radius: 50%;
+    width: 70%;
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.400);
+    border: 0.5px solid rgba(255, 255, 255, 0.782);
+}
+
+
+/*.............add..............*/
+
+
+
+.add{
+    display: flex;
+    flex-wrap: wrap;
+    width: 30em;
+    min-height: 7em;
+    margin: .3em 16em 3em 0;
+    background-image: url(../Image/add\ cover.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 3px;
+}
+
+@media screen and (min-width: 768px) {
+    .add{
+        max-width: 45em;
+    }  
+}
+
+.add i, a{
+    color: rgb(255, 255, 255);
+    margin: 1em 1em 1em 1em;
+    align-self: center;
+}
+
+i{
+  margin-left: 0px;
+  padding: 0 .4em ;
+  border: .08em solid white;
+  border-radius: 50%;   
+}
+
+.add a{
+    font-size: 1.2em;
+    padding: 0;
+    margin-left: 0;
+    text-decoration: none;
+}
+
+.add a:hover{
+   text-decoration: underline;
+}
+
+
+/*...................Blog............................*/
+
+
+.blog{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 1%;
+}
+
+@media screen and (max-width: 768px) {
+    .blog{
+      grid-template-columns: 1fr;
+  }
+}
+
+.container {
+    overflow: hidden;
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.400);
+   /* background-color: white;  */
+    text-align: center;
+    margin-bottom: 30px;
+    border-radius: 20px;
+    position: relative;
+}
+
+.container div{
+    margin-bottom: 1.5em;
+}
+
+.banner-img {
+    position: absolute; 
+    background-image: url("../Image/Bus.jpg"); 
+    height: 150px;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.banner-jf {
+    position: absolute; 
+    background-image: url("../Image/Jaflong-banner.JPG"); 
+    height: 150px;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+  
+.profile-img {
+    width: 100px;   
+    clip-path: circle(100px at center);
+    margin-top: 95px;
+    border-radius: 50%;
+}  
+
+.blog .container{
+    background-color: antiquewhite;
+
+}
+
+.blog .container:nth-child(odd){
+    background-color: rgba(250, 235, 215, 0.522);
+    border-radius: 20px;
+}
+
+.blog h2{
+    text-align: center;
+    text-decoration: underline;
+    font-weight: bold;
+    font-size: larger;
+    color: darkgreen;
+}
+
+.date{
+    color: rgba(27, 173, 252, 0.726);
+    margin-left: 2%;
+
+    text-decoration: underline;
+    font-family: serif;
+    font-size: 14px;
+}
+
+.blog p{
+    text-align: left;
+    margin-left: 1.5%;
+}
+
+.blog .container .more{
+    color: rgb(126, 126, 126); 
+    font-size: .7rem;
+    text-decoration: none; 
+    margin-left: 2px;
+}
+
+/*.....................footer.....................*/
+
+.footer #bottom{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    color: white;
+    background-color: gray;
+    min-height: 100px;
+    padding-bottom: 3px;
+    margin:90px 0px 10px 0px;
+}
+
+@media screen and (max-width: 500px){
+    .footer .bottom{
+      justify-content: left;
+    }  
+}
+  
+.footer #bottom div{
+    padding: 0px 50px;
+}
+  
+#bottom h1{
+    font-family: 'roboto', sans-serif;
+    font-size: 20px;
+    margin-bottom: .5em;
+}
+  
+.footer #bottom li, .footer h2{
+    font-size: 16px;
+    margin: 0px;
+    font-weight: lighter;
+    position: relative;
+    text-align: left;
+    list-style-type: none;
+    color: white;
+}
+  
+.copy-right{
+    text-align: center;
+}
+  
+.copy-right a{
+    text-decoration: none;
+    font-size: 6px;
+    color: black;
+}
+  
+.copy-right a:hover{
+    font-size: 9px;
+    color: blue;
+}
+
+

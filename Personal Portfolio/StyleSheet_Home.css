@@ -1,0 +1,479 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+ 
+
+
+ 
+.header{
+  border-radius: 20px;
+  box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.216);
+  background-color: rgba(0, 255, 250, 0.30);
+  background-image: linear-gradient(to left , rgba(0, 0, 0, 0.150) , rgba(255, 255, 255, 0));
+  color: white;
+  height: 700px;
+  padding-top: 20px;
+}
+
+.header .navbar {
+  background: gray;
+  color: white;
+  height: 2em; 
+  margin: 0 0 3em 0;
+}
+
+.header .navbar .logo{
+  margin-left: 1em;
+  box-shadow: none;
+  font-family: 'Oswald', sans-serif;
+}
+
+.header .navbar .container .logo:hover{
+  color: rgba(0, 255, 250, 0.30);
+  transition: 1s;
+}
+
+
+@media screen and (max-width:930px) {
+  .header .navbar .container .logo{
+    background-color: gray;
+    padding: .5em 1em .5em 1.5em;
+    border-radius: 50%;
+    font-size: 13px;
+  }
+}
+
+.header .navbar .container .logo::selection{
+  color: gray;
+}
+
+.navbar .container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}
+
+.navbar ul{
+  display: flex;
+  text-align: center;
+  font-family: 'Source Sans Pro', sans-serif;
+  list-style-type: none; 
+}
+
+.navbar li{
+  margin: 0px 1.5em;
+}
+
+.navbar a{
+  margin-right: 1em;
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.navbar a:hover{
+  background-color: rgb(0, 0, 0);
+  border-radius: 20px;
+  border: 1px solid white;
+  margin-top: 99px;
+  margin-bottom: 99px;
+  font-weight: bolder;
+  font-size: 16px;
+}
+
+.header .part-1 {
+  padding: 0px 40px 0px 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.part-1 div{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-top: 60px;
+  margin-bottom: 20px;
+  box-shadow: 0px 0px 10px 0px rgb(45, 45, 45);
+  border-radius: 20px;
+  background-color: rgba(0, 0, 0, 0.185);
+  max-width: 550px;
+}
+
+@media screen and (max-width: 768px) {
+   .part-1{
+   display: flex;
+   flex-direction: column-reverse;
+  }
+}
+
+.part-1 div h1{
+  font-size: 2em;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: bold;
+  text-align: left;
+  margin: .2em 0 .3em .3em;
+}
+
+.part-1 p {
+  font-size: 17px;
+  padding-right: .2em;
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.3em;
+  margin: .2em 0 .5em .6em;
+}
+
+.header img {
+  margin-left: 10px;
+  margin-top: 30px;
+  max-width: 650px;
+}
+
+@media screen and (max-width:968px) {
+  .header img{
+    max-width: 320px;
+  }
+  .header{
+    height: 650px;
+  }
+}
+
+@media screen and (max-width:568px) {
+  .header img{
+    max-width: 420px;
+    margin-top: 10px;
+  }
+  .header{
+    height: 750px;
+  }
+}
+
+
+
+/*.................................. Education & skills  ..................................................*/
+
+
+
+.info{
+  background-repeat: no-repeat;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  color: white;
+  margin-top: 2em;
+}
+@media screen and (max-width: 768px) {
+  .info{
+    grid-template-columns: 1fr;
+  }
+}
+
+.info h1{
+  font-size: 1.5em;
+  font-family: 'Source Sans Pro', sans-serif;
+  margin-top: .5em;
+}
+
+.skills{ 
+  background-image: linear-gradient(to right, rgb(0, 0, 0), rgba(255, 255, 255, 0.296)),
+  url(image/study-books-computer-skills-software-architect-programming.jpg);
+  background-size: 100%;
+  padding:  .5em 0em .8em 1.5em;
+  margin: 1em;
+  border-radius: 2px;
+}
+
+.skills li{
+  padding: .2em 0;
+}
+
+.education{
+  background-image: linear-gradient(to right, rgb(0, 0, 0), rgba(255, 255, 255, 0.296)),
+  url(image/BG-settings.jpg);
+  background-size: 100%;
+  padding:  .5em 0em .8em 1.5em;
+  margin: 1em;
+  border-radius: 2px;
+}
+
+.education button{
+  padding: 0 5px;
+  margin-top: .5em;
+  margin-bottom: 1em;
+}
+
+.education button a{
+  text-decoration: none;
+  color: white;
+}
+
+.education button a:hover{
+  color: gray;
+}
+
+
+.article img{
+  width: 300px;
+  border-radius: 2px;
+}
+
+.article img:hover{
+  margin: -.25px;
+  width: 301px;
+}
+
+.article{
+  width: 302px;
+  display: flex;
+  flex-direction: column;
+  margin:1em;
+
+}
+
+.article a{
+  text-decoration: none;
+  color: black;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 14px;
+}
+  
+.article a:hover{
+  text-decoration: underline;
+  color: gray;
+}
+
+
+
+
+/*..................................**discover**........................................*/
+
+
+
+.tag{
+  background-image: linear-gradient(to left , rgba(255, 255, 255, 0) , aqua , rgba(255, 255, 255, 0));
+  background-color:whitesmoke ;
+  text-align: center;
+  color: rgb(0, 0, 0);
+  padding: 10px;
+  margin-top: 20px;
+  font-weight: bolder;
+}
+
+#about{
+  margin-top: 40px;
+  margin-bottom: 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 10px;
+}
+
+@media screen and (max-width: 768px) {
+  #about{
+    grid-template-columns: 1fr;
+  }
+}
+
+#about .container{
+  overflow: hidden;
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.400);
+  text-align: center;
+  border-radius: 20px;
+  position: relative;
+}
+
+.profile-img{
+  width: 100px;
+  border: 0px solid white;
+  clip-path: circle(60px at center);
+  margin-top: 105px;
+  border-radius: 50%;
+  /*                 margin-right: 70%;     */
+}
+
+.banner-img-blog{
+  position: absolute;
+  background-image: url("./Image/Bus.jpg");
+  height: 150px;
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.banner-img-ps{
+  position: absolute;
+  background-image: url("./Image/Ps.banner.jpg");
+  height: 150px;
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.banner-img-xd{
+  position: absolute;
+  background-image: url("./Image/XD.banner.jpg");
+  height: 150px;
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.banner-img-ai{
+  position: absolute;
+  background-image: url("./Image/AI.banner.jpg");
+  height: 150px;
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+} 
+
+.banner-img-web{
+  position: absolute;
+  background-image: url("./Image/Web-Development.banner.png");
+  height: 150px;
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#about .container{
+  background-color: antiquewhite;
+  padding: 0;
+}
+
+#about .container:nth-child(odd){
+  background-color: rgba(250, 235, 215, 0.522);
+  border-radius: 20px;
+}
+
+#about h2{
+  font-family: 'Source Sans Pro', sans-serif;
+  text-align: center;
+  text-decoration: underline;
+  font-weight: bolder;
+  font-size: larger;
+  color: darkgreen;
+  margin: 5px 0;
+}
+
+#about a{
+  color: rgba(27, 173, 252, 0.726);
+  text-decoration: rgba(128, 128, 128, 0.423) 0.1px wavy underline;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 12px;
+}
+
+#about p{
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: lighter;
+  text-align: left;
+  margin: 10px 10px 5px 10px;
+  font-size: 14px;
+}
+
+button{
+  background-color: rgba(127, 255, 212, 0.511);
+  border: none;
+  padding: 0px 20px;
+  border-radius: 20px;
+  box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.51);
+  color: gray;
+  font-family: 'Roboto', sans-serif;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+button:hover{
+  background-color: rgb(127, 255, 212);
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.795);
+  color: rgb(0, 0, 0);
+  transition: 2s;
+}
+
+
+
+/*............................footer.............................*/
+
+
+
+#bottom{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  color: white;
+  background-color: gray;
+  min-height: 5em;
+  padding-bottom: .6em;
+  margin:5em 0 2em 0;
+}
+@media screen and (max-width: 500px) {
+  #bottom{
+    justify-content: left;
+  }
+  
+}
+
+#bottom div{
+  padding: 0px 2em;
+}
+
+.icon{
+  display: flex;
+  justify-content: center;
+  display: none;
+}
+
+@media screen and (max-width:768px) {
+  .navbar .container .nav{
+    display: none;
+  }
+
+  .icon{
+    display: block;
+  }
+  
+}
+
+i img{
+  width: 35px;
+  background-color: white;
+  border-radius: 50%;
+  padding: 2px;
+  margin: .5em 2em 1em 2em;
+}
+
+#bottom h1{
+  font-family: 'roboto', sans-serif;
+  font-size: 20px;
+  margin-bottom: .5em;
+}
+
+#bottom li, h2{
+  font-size: 16px;
+  margin: 0.2em;
+  font-weight: lighter;
+  text-align: left;
+  list-style-type: none;
+}
+
+.copy-right{
+  text-align: center;
+}
+
+.copy-right a{
+  text-decoration: none;
+  font-size: 6px;
+  color: black;
+}
+
+.copy-right a:hover{
+  font-size: 9px;
+  color: blue;
+}
+

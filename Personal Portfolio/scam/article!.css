@@ -1,0 +1,105 @@
+
+
+
+body{
+    height: 1080px;
+    margin: 0em;
+    background-image: url(../Image/article_bg.jpg);
+    backdrop-filter: blur(25px);
+    display: flex;
+    justify-content: center;
+}
+
+.alart{    
+    margin-top: 20em;
+    height: 200px;
+    width: 500px;
+    border-radius: 20px;
+    color: white;
+    background-color: rgba(128, 128, 128, 0.200);
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.400);    
+}
+
+@media screen and (max-width:768px) {
+    .alart{
+        width: 350px;
+    }   
+}
+
+.alart h1{
+    text-align: left;
+    background-color: rgb(42, 42, 255);
+    margin-top: 0;
+    border-radius: 20px 20px 0 0;
+    padding: .2em .2em .2em .5em;
+}
+
+.alart p{
+    text-align: center;
+    color: rgb(0, 0, 0);
+}
+
+button a{
+    text-decoration: none;
+    color: aliceblue;
+}
+
+#btn{
+    margin: 1em;   
+    display: flex;
+    justify-content: space-around;
+    margin-top: 5em;
+}
+
+button{
+    width: 5em;
+    height: 2em;
+    border-radius: 5px;
+    background-color: gray;  
+}
+
+button:hover{
+    border: none;
+}
+
+h6{
+    display: none;
+}
+
+#btn .b1:hover h6{
+    display: block;
+}
+
+#btn .b1:hover h5{
+    display: none;
+}
+
+h4{
+    display: none;
+}
+
+#btn:hover .b2 h4{
+    display: block;
+}
+
+#btn:hover .b2 h3{
+    display: none;
+}
+
+#btn .b2:hover  h4{
+    display: none;
+}
+
+#btn .b2:hover  h3{
+    display: block;
+}
+
+#btn h3,h4,h5,h6{
+    font-size: 1em;
+    padding: 0;
+    margin: 0;
+    position: relative;
+    text-align: center;
+}
+
+
