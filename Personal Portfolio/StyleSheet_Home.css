@@ -1,16 +1,22 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
- 
 
-
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,400;1,700;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Source+Sans+Pro:ital,wght@0,300;0,400;0,600;0,700;0,900;1,400;1,600;1,700;1,900&display=swap');
  
+*{
+  scroll-behavior: smooth;
+}
+
+p{
+  text-align: justify;
+}
+
 .header{
   border-radius: 20px;
   box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.216);
   background-color: rgba(0, 255, 250, 0.30);
   background-image: linear-gradient(to left , rgba(0, 0, 0, 0.150) , rgba(255, 255, 255, 0));
   color: white;
-  height: 700px;
+  height: 95vh;
   padding-top: 20px;
 }
 
@@ -22,9 +28,9 @@
 }
 
 .header .navbar .logo{
-  margin-left: 1em;
   box-shadow: none;
   font-family: 'Oswald', sans-serif;
+  font-size: 20px;
 }
 
 .header .navbar .container .logo:hover{
@@ -32,21 +38,12 @@
   transition: 1s;
 }
 
-
-@media screen and (max-width:930px) {
-  .header .navbar .container .logo{
-    background-color: gray;
-    padding: .5em 1em .5em 1.5em;
-    border-radius: 50%;
-    font-size: 13px;
-  }
-}
-
 .header .navbar .container .logo::selection{
   color: gray;
 }
 
 .navbar .container{
+  padding: 0 1.5em;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -60,12 +57,9 @@
   list-style-type: none; 
 }
 
-.navbar li{
-  margin: 0px 1.5em;
-}
-
 .navbar a{
-  margin-right: 1em;
+  margin: 0px .5em;
+  padding: 3px .5em;
   color: white;
   text-decoration: none;
   font-size: 16px;
@@ -76,10 +70,9 @@
   background-color: rgb(0, 0, 0);
   border-radius: 20px;
   border: 1px solid white;
+  box-shadow: 3px 1px 12px 4px rgba(172, 172, 172, 0.800) inset;
   margin-top: 99px;
   margin-bottom: 99px;
-  font-weight: bolder;
-  font-size: 16px;
 }
 
 .header .part-1 {
@@ -212,7 +205,6 @@
   color: gray;
 }
 
-
 .article img{
   width: 300px;
   border-radius: 2px;
@@ -228,7 +220,6 @@
   display: flex;
   flex-direction: column;
   margin:1em;
-
 }
 
 .article a{
@@ -244,10 +235,7 @@
 }
 
 
-
-
 /*..................................**discover**........................................*/
-
 
 
 .tag{
@@ -341,6 +329,16 @@
   background-size: cover;
 }
 
+.banner-img-In{
+  position: absolute;
+  background-image: url("./Image/In.banner.jpg");
+  height: 150px;
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 #about .container{
   background-color: antiquewhite;
   padding: 0;
@@ -352,7 +350,8 @@
 }
 
 #about h2{
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: 'roboto', sans-serif;
+  font-weight: 700;
   text-align: center;
   text-decoration: underline;
   font-weight: bolder;
@@ -364,16 +363,17 @@
 #about a{
   color: rgba(27, 173, 252, 0.726);
   text-decoration: rgba(128, 128, 128, 0.423) 0.1px wavy underline;
-  font-family: 'Source Sans Pro', sans-serif;
-  font-size: 12px;
+  text-shadow: 1px .25px .1px rgb(45, 45, 45);
+  font-family: 'roboto', sans-serif;
+  font-size: 18px;
 }
 
 #about p{
-  font-family: 'Source Sans Pro', sans-serif;
-  font-weight: lighter;
+  font-family: 'roboto', sans-serif;
+  font-weight: 500;
   text-align: left;
   margin: 10px 10px 5px 10px;
-  font-size: 14px;
+  font-size: 16px;
 }
 
 button{
@@ -396,9 +396,7 @@ button:hover{
 }
 
 
-
 /*............................footer.............................*/
-
 
 
 #bottom{
