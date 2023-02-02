@@ -45,7 +45,7 @@ To navigate through the pages, use the navigation bar located at the top of the 
 ##### v.2022
 
 ![Home page screenshot](./Screenshot%20(hero).png)
-![Home page screenshot](./Screenshot%20(E_s).png)
+![Home page screenshot](./Screenshot%20(E_S).png)
 ![Home page screenshot](./Screenshot%20(card).png)
 ![About page screenshot](./Screenshot%20(result).png)
 
