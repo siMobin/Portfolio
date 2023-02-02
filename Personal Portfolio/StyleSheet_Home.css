@@ -94,13 +94,6 @@ p{
   max-width: 550px;
 }
 
-@media screen and (max-width: 768px) {
-   .part-1{
-   display: flex;
-   flex-direction: column-reverse;
-  }
-}
-
 .part-1 div h1{
   font-size: 2em;
   font-family: 'Source Sans Pro', sans-serif;
@@ -123,26 +116,6 @@ p{
   max-width: 650px;
 }
 
-@media screen and (max-width:968px) {
-  .header img{
-    max-width: 320px;
-  }
-  .header{
-    height: 650px;
-  }
-}
-
-@media screen and (max-width:568px) {
-  .header img{
-    max-width: 420px;
-    margin-top: 10px;
-  }
-  .header{
-    height: 750px;
-  }
-}
-
-
 
 /*.................................. Education & skills  ..................................................*/
 
@@ -155,11 +128,6 @@ p{
   grid-template-columns: 1fr 1fr;
   color: white;
   margin-top: 2em;
-}
-@media screen and (max-width: 768px) {
-  .info{
-    grid-template-columns: 1fr;
-  }
 }
 
 .info h1{
@@ -254,12 +222,6 @@ p{
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-gap: 10px;
-}
-
-@media screen and (max-width: 768px) {
-  #about{
-    grid-template-columns: 1fr;
-  }
 }
 
 #about .container{
@@ -386,6 +348,7 @@ button{
   font-family: 'Roboto', sans-serif;
   margin-top: 20px;
   margin-bottom: 10px;
+  cursor: pointer;
 }
 
 button:hover{
@@ -410,40 +373,21 @@ button:hover{
   padding-bottom: .6em;
   margin:5em 0 2em 0;
 }
-@media screen and (max-width: 500px) {
-  #bottom{
-    justify-content: left;
-  }
-  
-}
 
 #bottom div{
   padding: 0px 2em;
 }
 
 .icon{
-  display: flex;
-  justify-content: center;
   display: none;
 }
 
-@media screen and (max-width:768px) {
-  .navbar .container .nav{
-    display: none;
-  }
-
-  .icon{
-    display: block;
-  }
-  
-}
-
 i img{
-  width: 35px;
+  width: 30px;
   background-color: white;
   border-radius: 50%;
   padding: 2px;
-  margin: .5em 2em 1em 2em;
+  margin: .5em;
 }
 
 #bottom h1{
@@ -473,5 +417,65 @@ i img{
 .copy-right a:hover{
   font-size: 9px;
   color: blue;
+}
+
+
+@media screen and (max-width: 950px) {
+  .header img{
+    max-width: 320px;
+  }
+  .header{
+    min-height: 50vh;
+    height: auto;
+  }
+
+  #about{
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media screen and (max-width:768px) {
+
+  .header img{
+    max-width: calc(100vw-2em);
+    margin: 0;
+  }
+  .header{
+    height: auto;
+  }
+
+  .info{
+    grid-template-columns: 1fr;
+  }
+
+  .part-1{
+    display: flex;
+    flex-direction: column-reverse;
+   }
+
+.part-1 div{
+  width: 90vw;
+}
+
+  #about{
+    grid-template-columns: 1fr;
+  }
+
+#about .container{
+  width: calc(100vw-1em);
+}
+
+  #bottom{
+    justify-content: left;
+  }
+  .navbar .container .nav{
+    display: none;
+  }
+
+.icon{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
 }
 
